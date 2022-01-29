@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script  defer src="http://localhost:8000/socket.io/socket.io.js"></script> <!-- This should be above client.js link else it will not work , -->
+    
+    <script defer src="js/client.js"></script>
+    <script src="https://kit.fontawesome.com/20cf9f0bff.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav>
+        <!-- <i class="fab fa-telegram logo"></i> -->
+        <h1>Telegram</h1>
+        <i class="fas fa-ellipsis-v dots"></i>
+    </nav>  
+    
+    <div class="container">
+        <!-- <div class="message right">Harry: How are you?</div>
+        <div class="message left">Rohan: Bhai I am fine. How are you?</div>  -->
+    </div>
+
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" placeholder="Message" name="messageInp" id="messageInp">
+            <button class="btn" type="submit"><ion-icon name="send-outline" class="send"></ion-icon></button>
+        </form>
+    </div>
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
